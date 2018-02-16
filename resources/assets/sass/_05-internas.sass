@@ -3,3 +3,82 @@
 /******************************/
 .inside-main-banner
 	margin-bottom: 10px
+
+.categories-products-list
+	h2, h3
+		margin-top: 0
+		cursor: pointer
+		font-size: 1.3em
+		color: $base-color
+	h2
+		i
+			display: inline-block
+			margin-left: 15px
+	h3
+		color: #000000
+		margin: 12px 0
+
+.category-list-wrap
+	display: none
+	padding: 1px 0
+	ul
+		display: none
+	li
+		font-size: 1.3em
+		padding: 5px 0
+		&.active
+			font-weight: bold
+	a
+		display: block
+		color: $base-color
+		&:hover
+			text-decoration: underline
+
+.product-list-container
+	.item-product
+		&:nth-of-type(3n + 4)
+			clear: left
+
+.item-product
+	padding-bottom: 20px
+	border-bottom: solid 1px #CCCCCC
+
+.product-list-box
+	+ttion
+	&:hover
+		opacity: 0.7
+		h2, span:not(.old-price)
+			text-decoration: underline
+	a
+		display: block
+		position: relative
+		color: $base-color
+
+.product-info
+	text-align: center
+	h2
+		font-size: 1.5em
+		font-weight: normal
+	span
+		margin: 0 10px
+		font-size: 1.5em
+		display: inline-block
+	.old-price
+		text-decoration: line-through
+	.product-color
+		width: 20px
+		height: 20px
+		margin: 5px
+
+.discount
+	right: 0
+	top: 10px
+	width: 50px
+	height: 50px
+	color: #FFFFFF
+	font-size: 1.4em
+	text-align: center
+	border-radius: 50%
+	position: absolute
+	background-color: #CE504C
+	+flex($ai: center)

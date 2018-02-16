@@ -54,86 +54,32 @@ $(function () {
 	$(window).scroll(stickyRelocate);
 });
 
+// Categories Nav
+$('.category-list-wrap h3').click(function () {
+	var father = $(this).parent();
+	$('ul', father).slideToggle(350);
+});
+
+$('.categories-products-list h2').click(function () {
+	$('.category-list-wrap').slideToggle(350);
+});
+
 // On focus-blur input contact form
-$('.form-control input, .form-control textarea').focus(function () {
-	$(this).css('opacity', '1');
-});
-
-$('.form-control input, .form-control textarea').blur(function () {
-	if ($(this).val() !== '') {
-		$(this).css('opacity', '0.4');
-	}
-});
-
-$('.select-box_combo').change(function () {
-	var padre = $(this).parent();
-	var combo = $(this, padre);
-	console.log(combo.val());
-	if (combo.val() !== '') {
-		$(padre).css('opacity', '0.4');
-	}
-});
-
-// Select box change text
-var combo = $('.select-box_combo');
-combo.bind('change', changeText);
-function changeText () {
-	var value = $('option:selected', this).text();
-	var parent = $(this).parent();
-	$('span:not(.fake-arrow)', parent).text(value);
-}
-
-// More-Less product
-var btnLess = $('.shop-cart-quantity button[name=lessBtn]');
-var btnMore = $('.shop-cart-quantity button[name=moreBtn]');
-
-btnLess.click(function () {
-	var parent = $(this).parent();
-	var quantity = $('input[name=productQuantity]', parent);
-	if (quantity.val() > 1) {
-		var actualValue = quantity.val();
-		actualValue--;
-		quantity.val(actualValue);
-	}
-});
-
-btnMore.click(function () {
-	var parent2 = $(this).parent();
-	var quantity2 = $('input[name=productQuantity]', parent2);
-	var actualValue2 = quantity2.val();
-	actualValue2++;
-	quantity2.val(actualValue2);
-});
-
-// Delete product
-var deleteBtn = $('img[data-id=deleteBtn]');
-
-deleteBtn.click(function () {
-	var grantParent = $(this).parent().parent();
-	grantParent.fadeOut('slow');
-});
-
-// Custom-Input-File
-(function (document, window, index) {
-	var inputs = document.querySelectorAll('.inputfile');
-
-	Array.prototype.forEach.call(inputs, function (input) {
-		var label = input.nextElementSibling;
-		var labelVal = label.innerHTML;
-
-		input.addEventListener('change', function (e) {
-			var fileName = '';
-			if (this.files && this.files.length > 1) {
-				fileName = (this.getAttribute('data-multiple-caption') || '').replace('{count}', this.files.length);
-			} else {
-				fileName = e.target.value.split('\\').pop();
-			}
-
-			if (fileName) {
-				label.querySelector('span').innerHTML = fileName;
-			} else {
-				label.innerHTML = labelVal;
-			}
-		});
-	});
-}(document, window, 0));
+// $('.form-control input, .form-control textarea').focus(function () {
+// 	$(this).css('opacity', '1');
+// });
+//
+// $('.form-control input, .form-control textarea').blur(function () {
+// 	if ($(this).val() !== '') {
+// 		$(this).css('opacity', '0.4');
+// 	}
+// });
+//
+// $('.select-box_combo').change(function () {
+// 	var padre = $(this).parent();
+// 	var combo = $(this, padre);
+// 	console.log(combo.val());
+// 	if (combo.val() !== '') {
+// 		$(padre).css('opacity', '0.4');
+// 	}
+// });

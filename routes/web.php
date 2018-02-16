@@ -18,3 +18,11 @@ Route::get('/', function () {
 Route::get('/lookbook-girl', function () {
 	return view('lookbook-girl');
 });
+
+Route::get('/lookbook-baby', function () {
+	return view('lookbook-baby');
+});
+
+Route::get('/listado-productos', function () {
+	return view('listado-productos');
+});
