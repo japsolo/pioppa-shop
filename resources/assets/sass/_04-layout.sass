@@ -1,0 +1,316 @@
+/***************************************/
+/*========= WRAPPER-&-BASICS =========*/
+/*************************************/
+.hidden
+	display: none
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*****************************/
+/*========= HEADER =========*/
+/***************************/
+.top-header-bar
+	padding: 10px 0
+	+flex($ai: center)
+
+.search-top-header-bar
+	input
+		border: none
+		padding: 0 10px
+		font-size: 1.4em
+	button
+		border: none
+		font-size: 1.5em
+		color: $base-color
+		background-color: transparent
+
+.top-header-bar-links
+	margin-left: auto
+	li
+		color: $base-color
+		display: inline-block
+		vertical-align: middle
+		font-size: 1.4em
+		&:last-child
+			font-weight: bold
+		&:first-child
+			border-left: solid 1px $base-color
+			border-right: solid 1px $base-color
+	a
+		display: block
+		padding: 0 10px
+		color: currentColor
+		&:hover
+			text-decoration: underline
+
+.logo-header
+	text-align: center
+	padding-bottom: 15px
+	img
+		width: 100%
+		max-width: 180px
+
+
+
+
+
+
+
+
+
+
+
+
+/*========= NAV-BAR =========*/
+.toggle-nav
+	background-color: rgba($base-color, 0.7)
+	width: 40px
+	height: 40px
+	border-radius: 50%
+	position: fixed
+	z-index: 1500
+	right: 25px
+	bottom: 25px
+	font-size: 2em
+	color: #FFFFFF
+	padding-top: 4px
+	box-shadow: 0 0 5px rgba($base-color, 0.7)
+	+flex($ai: center, $jc: center)
+
+.main-nav
+	left: 0
+	top: 0
+	width: 0
+	z-index: 1000
+	height: 100vh
+	position: fixed
+	overflow: hidden
+	background-color: #FFFFFF
+	transition: 150ms ease-out 250ms
+	&.show
+		width: 60vw
+		overflow-y: scroll
+
+.first-level-nav
+	> li
+		font-size: 1.4em
+		position: relative
+		> a
+			display: block
+			color: #000000
+			padding: 1em 0.5em
+			white-space: nowrap
+			&:hover
+				text-decoration: underline
+
+.drop-nav-container
+	display: none
+
+.drop-nav-list
+	li
+		overflow: hidden
+	a
+		font-size: 1em
+		display: block
+		color: #000000
+		padding: 0.5em 0
+	.bold
+		font-weight: bold
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**********************************/
+/*========= MAIN-BANNER =========*/
+/********************************/
+.main-banner
+	display: none
+
+.owl-dots
+	left: 0
+	width: 100%
+	bottom: 30px
+	text-align: center
+	position: absolute
+
+.owl-dot
+	margin: 5px
+	cursor: pointer
+	display: inline-block
+	&.active
+		span
+			background-color: rgba(#333333, 0.5)
+	span
+		width: 15px
+		height: 15px
+		border-radius: 50%
+		display: inline-block
+		background-color: #FFFFFF
+		border: solid 1px rgba(#333333, 0.5)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***********************************/
+/*========= MAIN-CONTENT =========*/
+/*********************************/
+.img-banner
+	margin: 5px 0
+	padding: 5px 0
+	+ttion
+	&:hover
+		opacity: 0.6
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*****************************/
+/*========= FOOTER =========*/
+/***************************/
+.main-footer
+	margin-top: 40px
+	padding: 15px 0 60px
+	background-color: $comp-color
+
+.footer-social-links
+	+flex($ai: center, $jc: center)
+	a
+		color: #FFFFFF
+		font-size: 1.8em
+		display: block
+		padding: 0 5px
+
+.footer-nav
+	margin-top: 20px
+	li
+		margin-bottom: 8px
+		text-align: center
+	a
+		display: block
+		color: #FFFFFF
+		font-size: 1.2em
+
+.newsletter-form
+	margin-top: 15px
+	padding-bottom: 7px
+	border-bottom: solid 1px #FFFFFF
+	+flex($ai: center, $jc: space-between)
+	label
+		width: 100%
+		display: block
+		color: #FFFFFF
+		font-size: 1.2em
+		margin-bottom: 5px
+	input
+		width: 80%
+		border: none
+		color: #FFFFFF
+		font-size: 1.4em
+		background-color: transparent
+	button
+		width: 20%
+		border: none
+		color: #FFFFFF
+		font-size: 1.3em
+		text-align: center
+		background-color: transparent
+
+.footer-credits
+	font-size: 1.3em
+	text-align: center
+	margin-bottom: 0
+	color: #FFFFFF
+
+.wrap-top-btn
+	left: 0
+	right: 0
+	bottom: 0
+	width: 100%
+	margin: auto
+	z-index: 100
+	position: fixed
+	max-width: $base-width * 1px
+	#btn-top
+		bottom: 0
+		left: 50%
+		width: 80px
+		display: none
+		font-size: 15px
+		line-height: 30px
+		color: $base-color
+		text-align: center
+		position: absolute
+		background-color: #FFFFFF
+		border-radius: 5px 5px 0 0
+		transform: translateX(-50%)
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.5)
+		&:hover
+			opacity: 0.8
+
+.sticky-anchor
+	display: block
+	width: 100%
