@@ -47,6 +47,12 @@
 	.main-banner
 		display: block
 
+	.table-col
+		&:first-child,
+		&:nth-child(2),
+		&:nth-child(3),
+			width: 33.33%
+
 
 
 
@@ -129,6 +135,31 @@
 		&:first-of-type
 			ul
 				display: block
+
+	.owl-thumbs
+		button
+			width: 100px
+			margin: 0 0 20px 15px
+
+	.table-col
+		&:nth-child(n + 1)
+			width: (100 / 7) * 1%
+		img
+			width: 70px
+
+	.shopcart-footer
+		+flex($ai: center, $jc: space-between)
+
+	.cart-token-discount,
+	.total-cart
+		width: (14.285 * 3) * 1%
+		margin-top: 20px
+
+	.log-reg
+		margin-left: auto
+		li
+			margin-right: 0
+			margin-left: 15px
 
 
 

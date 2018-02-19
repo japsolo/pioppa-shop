@@ -26,3 +26,11 @@ Route::get('/lookbook-baby', function () {
 Route::get('/listado-productos', function () {
 	return view('listado-productos');
 });
+
+Route::get('/detalle-producto', function () {
+	return view('detalle-producto');
+});
+
+Route::get('/cart', function () {
+	return view('cart');
+});

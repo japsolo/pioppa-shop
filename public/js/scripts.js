@@ -64,6 +64,15 @@ $('.categories-products-list h2').click(function () {
 	$('.category-list-wrap').slideToggle(350);
 });
 
+// Select box change text
+var combo = $('.select-box_combo');
+combo.bind('change', changeText);
+function changeText () {
+	var value = $('option:selected', this).text();
+	var parent = $(this).parent();
+	$('span', parent).text(value);
+}
+
 // On focus-blur input contact form
 // $('.form-control input, .form-control textarea').focus(function () {
 // 	$(this).css('opacity', '1');
