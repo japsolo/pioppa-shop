@@ -40,20 +40,6 @@ $('#btn-top').click(function (e) {
 	$('html, body').animate({scrollTop: 0}, 'slow');
 });
 
-function stickyRelocate () {
-	var windowTop = $(window).scrollTop();
-	var anchor = $('.sticky-anchor').offset().top;
-	if (windowTop > anchor) {
-		$('.main-nav').addClass('stick');
-	} else {
-		$('.main-nav').removeClass('stick');
-	}
-}
-
-$(function () {
-	$(window).scroll(stickyRelocate);
-});
-
 // Categories Nav
 $('.category-list-wrap h3').click(function () {
 	var father = $(this).parent();
@@ -73,22 +59,15 @@ function changeText () {
 	$('span', parent).text(value);
 }
 
-// On focus-blur input contact form
-// $('.form-control input, .form-control textarea').focus(function () {
-// 	$(this).css('opacity', '1');
-// });
-//
-// $('.form-control input, .form-control textarea').blur(function () {
-// 	if ($(this).val() !== '') {
-// 		$(this).css('opacity', '0.4');
-// 	}
-// });
-//
-// $('.select-box_combo').change(function () {
-// 	var padre = $(this).parent();
-// 	var combo = $(this, padre);
-// 	console.log(combo.val());
-// 	if (combo.val() !== '') {
-// 		$(padre).css('opacity', '0.4');
-// 	}
-// });
+// Buttons-navbar
+let docW = $(document).width();
+if (docW >= 992) {
+	$('.first-level-nav > li > a').click(e => e.preventDefault());
+}
+
+$(window).resize(function () {
+	let docW = $(document).width();
+	if (docW >= 992) {
+		$('.first-level-nav > li > a').click(e => e.preventDefault());
+	}
+});

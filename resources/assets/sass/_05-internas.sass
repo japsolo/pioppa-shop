@@ -319,3 +319,67 @@
 		+ttion
 		&:hover
 			background-color: #298c99
+
+.reg-log-form
+	margin-bottom: 40px
+	a
+		font-size: 1.5em
+		color: $base-color
+		&:hover
+			text-decoration: underline
+	h2
+		text-align: center
+		font-size: 2.5em
+		margin: 20px 0 30px
+	button
+		border: solid 1px $base-color
+		font-size: 1.4em
+		padding: 1em
+		min-width: 110px
+		+ttion
+		&:hover
+			cursor: pointer
+			background-color: $base-color
+			color: #FFFFFF
+
+
+.form-control
+	margin-bottom: 20px
+	label
+		display: block
+		font-size: 1.4em
+		margin-bottom: 3px
+	input:not([type='checkbox'])
+		display: block
+		width: 100%
+		height: 40px
+		padding: 0.5em
+		font-size: 1.5em
+		border: solid 1px $comp-color
+		+ttion
+		&:focus
+			background-color: #f2f2f2
+			box-shadow: 0 0 5px rgba(black, 0.5)
+	input[type=checkbox]
+			display: inline-block
+			margin-right: 5px	
+	.select-box_combo
+		border-radius: 0
+		width: 100%
+		border-color: $comp-color
+		height: 40px
+		&::after
+			content: ''
+			position: absolute
+			right: 10px
+			top: 50%
+			border-width: 8px
+			margin-top: -4px
+			z-index: -1
+			border-style: solid
+			border-color: $comp-color transparent transparent transparent
+		span
+			padding: 0 0.5em
+			font-size: 1.5em
+			line-height: 38px
+			text-align: left

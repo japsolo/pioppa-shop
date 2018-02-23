@@ -34,3 +34,7 @@ Route::get('/detalle-producto', function () {
 Route::get('/cart', function () {
 	return view('cart');
 });
+
+Route::get('/login', function () {
+	return view('login');
+});
