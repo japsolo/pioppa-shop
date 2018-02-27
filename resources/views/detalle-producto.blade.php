@@ -4,6 +4,7 @@
 
 @section('otherStyleSheet')
 	<link rel="stylesheet" href="/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="/fancybox/jquery.fancybox-1.3.4.css">
 @stop
 
 @section('mainContent')
@@ -80,7 +81,7 @@
 					<br>
 					<h3>DESCRIPCIÓN</h3>
 					<p class="description">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISICING ELIT. VITAE MINUS, ASPERIORES. DELECTUS NAM, SAPIENTE DOLOREMQUE DOLORES, AB UT EX QUAE ADIPISCI FUGA. NEMO IN DOLORE REPREHENDERIT MINUS AD EXCEPTURI QUIDEM.</p>
-					<button type="submit" class="product-submit-button">SHOP</button>
+					<button type="submit" href="#modal-data" class="product-submit-button">SHOP</button>
 				</form>
 				<br>
 				<h3>COMPARTIR</h3>
@@ -95,9 +96,20 @@
 		</div>
 	</div>
 	<!-- /Listado-Productos -->
+
+	<div class="modal-data">
+		<div id="modal-data">
+			<article>
+				<h2>Lorem ipsum dolor sit amet.</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, consequuntur in temporibus rem minima cupiditate, maiores ut excepturi, quod aliquam sunt natus illum ducimus esse. Repellendus esse nulla consectetur? Atque? </p>
+				<a href="javascript:;" onclick="$.fancybox.close();"><i class="ion-close-circled"></i></a>
+			</article>
+		</div>
+	</div>
 @stop
 
 @section('otherScripts')
+	<!-- Owl-Carouse -->
 	<script src="/js/owl.carousel.js"></script>
 	<script src="/js/owl.carousel.thumbs.js"></script>
 	<script>
@@ -113,6 +125,21 @@
 					items: 1
 				}
 			}
+		});
+	</script>
+
+	<!-- Modal-box -->
+	<script src="/js/jquery.min_1.8.3.js"></script>
+	<script src="/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script src="/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<script>
+		/* global $ */
+		$('.product-submit-button').fancybox({
+			'transitionIn': 'fade',
+			'transitionOut': 'fade',
+			'overlayColor': '#000',
+			'autoDimensions': true,
+			'overlayOpacity': 0.5
 		});
 	</script>
 @stop
