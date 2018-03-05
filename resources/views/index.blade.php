@@ -23,9 +23,33 @@
 	<div class="row">
 		<!-- Left-Col -->
 		<div class="col-md-4">
-			<figure class="img-banner"><a href="#"><img src="/images/img-banner-baby-girl.jpg" alt="baby girls"></a></figure>
-			<figure class="img-banner"><a href="#"><img src="/images/img-banner-baby-boy.jpg" alt="baby boys"></a></figure>
-			<figure class="img-banner"><a href="#"><img src="/images/img-banner-new-born.jpg" alt="new born"></a></figure>
+			<figure class="img-banner">
+				<a href="#">
+					<div class="img-banner-text">
+						<h2>BABY GIRL</h2>
+						<span>COMPRAR</span>
+					</div>
+					<img src="/images/img-banner-baby-girl.jpg" alt="baby girls">
+				</a>
+			</figure>
+			<figure class="img-banner">
+				<a href="#">
+					<div class="img-banner-text">
+						<h2>BABY BOY</h2>
+						<span>COMPRAR</span>
+					</div>
+					<img src="/images/img-banner-baby-boy.jpg" alt="baby boys">
+				</a>
+			</figure>
+			<figure class="img-banner">
+				<a href="#">
+					<div class="img-banner-text">
+						<h2>NEWBORN</h2>
+						<span>COMPRAR</span>
+					</div>
+					<img src="/images/img-banner-new-born.jpg" alt="new born">
+				</a>
+			</figure>
 			<figure class="img-banner"><a href="#"><img src="/images/img-banner-pioppa-stars.jpg" alt="pioppa stars"></a></figure>
 		</div>
 		<!-- /Left-Col -->
@@ -34,10 +58,26 @@
 		<div class="col-md-8">
 			<div class="row">
 				<div class="col-md-6">
-					<figure class="img-banner"><a href="#"><img src="/images/img-banner-girl.jpg" alt="girls"></a></figure>
+					<figure class="img-banner">
+						<a href="#">
+							<div class="img-banner-text">
+								<h2>GIRL</h2>
+								<span>COMPRAR</span>
+							</div>
+							<img src="/images/img-banner-girl.jpg" alt="girls">
+						</a>
+					</figure>
 				</div>
 				<div class="col-md-6">
-					<figure class="img-banner"><a href="#"><img src="/images/img-banner-boy.jpg" alt="boys"></a></figure>
+					<figure class="img-banner">
+						<a href="#">
+							<div class="img-banner-text">
+								<h2>BOY</h2>
+								<span>COMPRAR</span>
+							</div>
+							<img src="/images/img-banner-boy.jpg" alt="boys">
+						</a>
+					</figure>
 				</div>
 				<div class="col-md-12">
 					<figure class="img-banner"><a href="#"><img src="/images/img-banner-lookme.jpg" alt="look me"></a></figure>
