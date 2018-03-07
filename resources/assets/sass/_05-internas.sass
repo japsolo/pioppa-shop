@@ -253,7 +253,7 @@
 		margin: 0
 		color: $comp-color
 		font-size: 1.4em
-	button
+	button, .print
 		padding: 0
 		border: none
 		width: 100%
@@ -261,7 +261,9 @@
 		color: #FFFFFF
 		font-size: 2em
 		cursor: pointer
+		text-align: center
 		border-radius: 5px
+		display: inline-block
 		background-color: #298c99
 		+ttion
 		&:hover
@@ -332,11 +334,12 @@
 		text-align: center
 		font-size: 2.5em
 		margin: 20px 0 30px
-	button
-		border: solid 1px $base-color
-		font-size: 1.4em
+	button, .link
 		padding: 1em
+		font-size: 1.4em
 		min-width: 110px
+		display: inline-block
+		border: solid 1px $base-color
 		+ttion
 		&:hover
 			cursor: pointer
@@ -363,7 +366,7 @@
 			box-shadow: 0 0 5px rgba(black, 0.5)
 	input[type=checkbox]
 			display: inline-block
-			margin-right: 5px	
+			margin-right: 5px
 	.select-box_combo
 		border-radius: 0
 		width: 100%

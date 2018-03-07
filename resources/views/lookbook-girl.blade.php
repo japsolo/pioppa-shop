@@ -14,6 +14,19 @@
 
 	<!-- Row -->
 	<div class="row">
+		<div class="col-xs-12">
+			<div class="col-md-3">
+				<figure class="img-banner"><a href="#"><img src="/images/img-look-book-girl_01.jpg" alt=""></a></figure>
+				<figure class="img-banner"><a href="#"><img src="/images/img-look-book-girl_01.jpg" alt=""></a></figure>
+			</div>
+			<div class="col-md-6">
+				<figure class="img-banner"><a href="#"><img src="/images/img-look-book-girl_01.jpg" alt=""></a></figure>
+			</div>
+			<div class="col-md-3">
+				<figure class="img-banner"><a href="#"><img src="/images/img-look-book-girl_01.jpg" alt=""></a></figure>
+				<figure class="img-banner"><a href="#"><img src="/images/img-look-book-girl_01.jpg" alt=""></a></figure>
+			</div>
+		</div>
 		<!-- 1st-Column -->
 		<div class="col-md-6">
 			<div class="row">
