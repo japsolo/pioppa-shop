@@ -46,3 +46,7 @@ Route::get('/profile', function () {
 Route::get('/shoppings', function () {
 	return view('shoppings');
 });
+
+Route::get('/locales', function () {
+	return view('locales');
+});
